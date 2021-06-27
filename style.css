@@ -1,0 +1,706 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.center{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+.menu-icon{
+    font-size:30px;
+    color:#fff;
+    display: none;
+    padding:10px;
+    cursor:pointer;
+}
+nav{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0px;
+}
+nav a img{
+    width:60px;
+}
+nav ul{
+    text-align: right;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin:0px 10px;
+    padding:8px;
+    position:relative;
+}
+nav ul li::after{
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:0%;
+    height: 3px;
+    content: '';
+    background:chocolate;
+    transform: translateX(-50%);
+    transition:.5s;
+}
+nav ul li:hover::after{
+    width:90%
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:20px;
+}
+.information{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.information h1{
+    font-size:40px;
+    color:#fff;
+    padding:10px 0px;
+    width: 80%;
+    margin: auto;
+}
+.information p{
+    color:#fff;
+    font-size:20px;
+    line-height: 2rem;
+    margin-bottom:16px;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    border:1px solid chocolate;
+    padding:12px 30px;
+    color:chocolate; 
+    position: relative;
+    z-index: 1;
+}
+.btn::after{
+    width:0;
+    height:100%;
+    left:0px;
+    top:0px;
+    background:chocolate;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    transition:.5s;
+}
+.btn:hover::after{
+    width:100%;
+    color:#fff;
+}
+.btn:hover{
+    color:#fff;
+    border:1px solid transparent;
+}
+
+/* Start Course Area */
+.course{
+    padding-top:100px;
+    text-align: center;
+}
+.row{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:50px;
+}
+h2{
+    font-size:25px;
+    padding:10px 0px;
+    text-transform: capitalize;
+}
+.course p{
+    padding-bottom:20px;
+    color:#777;
+    width: 80%;
+    margin: auto;
+}
+.course-col{
+    flex-basis: 31%;
+    background:rgba(211, 160, 49, 0.5);
+    padding:10px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition:.3s;
+    box-sizing: border-box;
+}
+.course-col:hover {
+    box-shadow: 0px 2px 14px 0px #000;
+}
+.course-col h3{
+    padding:12px 0px;
+    font-size:20px;
+}
+
+/* Start Campus Area */
+.campus{
+    text-align: center;
+    padding-top:50px;
+    margin:auto;
+}
+.campus-col{
+    flex-basis: 32%;
+    overflow: hidden;
+    border-radius: 10px;
+    position:relative;
+    margin-top:5%;
+}
+.campus-col img{
+    width:100%;
+    border-radius: 10px;
+}
+.text h4{
+    color:#fff;
+    font-size:24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:transparent;
+    transition: .4s;
+}
+.text:hover{
+    background:rgb(210, 105, 30, 0.6);
+}
+.text h4{
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform: translate(-50%,-50%);
+    transition:.5s;
+    opacity: 0;
+}
+.text:hover h4{
+    bottom:50%;
+    opacity: 1;
+}
+/* Start Facilities Area */
+.facilities{
+    margin-top:50px;
+    text-align: center;
+    padding-top:50px;
+}
+.face-col{
+    flex-basis: 32%;
+    overflow: hidden;
+    margin-top:5%;
+}
+.face-col img{
+    width:100%;
+    border-radius: 10px;
+    height:300px;
+    cursor: pointer;
+}
+.face-col h4{
+    text-align-last: left;
+    padding:12px 0px;
+    font-size:18px;
+    text-transform: capitalize;
+}
+.face-col p{
+    text-align: left;
+    font-size:18px;
+    line-height: 1.6rem;
+    color:#777;
+}
+/* Start Testimonial Area */
+.testimonial{
+    margin-top:50px;
+    padding:50px 0px;
+    text-align: center;
+}
+.test-col{
+    flex-basis: 44%;
+    margin-top:10px;
+    display: flex;
+    background:rgb(210, 105, 30, 0.5);
+    padding:3% 4%;
+    border-radius: 10px;
+    margin-top:10px;
+}
+.test-col img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: -10px;
+}
+.test-col p{
+    text-align: left;
+    color:rgb(126, 121, 121);
+    line-height:1.6rem;
+    margin-bottom:15px;
+}
+.test-col h4{
+    text-align: left;
+}
+.description{
+    text-align: left;
+}
+.description p{
+    font-size:14px;
+    line-height: 1.4;
+}
+.reviews{
+    color:chocolate;
+    text-align: left;
+}
+.white{
+    color:#fff;
+}
+/* Start Enrol Area */
+.enrol{
+    background-image: url(assets/img/contact_bg.jpg);
+    width:80%;
+    height:300px;
+    background-size: cover;
+    background-position: center;
+    margin:auto;
+    margin-top:50px;
+    padding:30px 0px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.enrol-area{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width:90%;
+    transform: translate(-50%,-50%);
+}
+.enrol-area h2{
+    color:#fff;
+    letter-spacing: 2px;
+    margin-bottom:15px;
+    font-size:22px;
+}
+/* Start About Area */
+.about{
+    width:80%;
+    margin:auto;
+    margin-top:50px;
+    padding:40px 0px;
+    text-align: center;
+}
+.about h2{
+    margin-bottom:20px;
+    font-family: tahoma;
+}
+.about p{
+    color:#777;
+    margin-bottom:15px;
+}
+.share{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.share i{
+    color:chocolate;
+    font-size:20px;
+    padding:10px;
+    cursor: pointer;
+    transition:.4s;
+}
+.share i:hover{
+    color:rgb(170, 45, 0);
+}
+.copy {
+    font-size:20px;
+}
+.copy i{
+    color:coral;
+    font-size:25px;
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+    .row{
+        display: block;
+    }
+    .course-col{
+        margin-top:20px;
+    }
+    .information h1{
+        font-size:30px;
+    }
+    .information p{
+        font-size:17px;
+        line-height: 1.2;
+    }
+    .test-col img{
+        width:40px;
+        height:40px;
+    }
+    .description p {
+        font-size: 14px;
+    }
+    .enrol-area h2{
+        font-size:16px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:479px)  {
+    .row{
+        display: block;
+    }
+    h2{
+        font-size:20px;
+    }
+    .course-col{
+        margin-top:20px;
+    }
+    .information h1{
+        font-size:22px;
+    }
+    .information p{
+        font-size:14px;
+        line-height: 1.2;
+    }
+    .test-col img{
+        width:40px;
+        height:40px;
+    }
+    .description p {
+        font-size: 14px;
+    }
+    .enrol-area h2{
+        font-size:16px;
+    }
+}
+@media(max-width: 992px) {
+    .menu-icon{
+        display: block;
+    }
+    nav ul{
+        position:absolute;
+        width:200px;
+        height:100%;
+        right:-200px;
+        top:0;
+        background:chocolate;
+        text-align: left;
+        z-index:99999;
+        padding:14px;
+        transition:.6s;
+    }
+    nav ul li{
+        display: block;
+        transition:.4s;
+        border-bottom:1px dotted #ccc;
+    }
+    nav ul li:hover{
+        padding-left:10%;
+    }
+}
+/* **************** About Page ******* */
+#about-page{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/img/about_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 50vh;
+}
+#about-page .information{
+    top:30%;
+}
+.about-desc{
+    display: flex;
+    width:80%;
+    margin:auto;
+    margin-top:50px;
+    padding:40px 0px;
+}
+.left-area, .right-area{
+    flex:45%;
+    margin-top:5%;
+}
+.left-area{
+    padding-right:5%;
+}
+.right-area img{
+    width:100%;
+    height:350px;
+    border-radius:10px;
+}
+.left-area h2{
+    margin-bottom:20px;
+}
+.left-area p{
+    line-height: 1.5;
+    color:#777;
+    margin-bottom:30px;
+}
+.our-gallery{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+    overflow: hidden;
+}
+.our-gallery h2{
+    text-align: center;
+    font-size:22px;
+    text-transform: uppercase;
+}
+.gallery{
+    width:100%;
+    height:50vh;
+    display: flex;
+    margin:4% auto 0;
+}
+.image-box{
+    margin:0 1%;
+    flex-basis:0;
+    flex-grow:1;
+    transition:1s;
+    position:relative;
+}
+.image-box h2{
+    position:absolute;
+    left:50%;
+    top:100%;
+    text-align: center;
+    width:100%;
+    height:100%;
+    transform:translate(-50%, -50%);
+    color:rgb(252, 16, 16);
+    font-size:18px;
+    opacity:0;
+    transition:1s;
+}
+.image-box h2:hover{
+    opacity:1;
+}
+.image-box img{
+    width:100%;
+    height:100%;
+    transition:1s;
+    object-fit: fill;
+}
+.image-box:hover{
+    flex-basis:30%;
+}
+.active{
+    flex-basis:30%;
+}
+.gallery:hover .active{
+    flex-basis:0;
+}
+.image-box:nth-child(1):hover{
+    flex-basis:30%;
+}
+@media(max-width: 900px) {
+    .about-desc{
+        display: block;
+    }
+    .image-box:hover{
+        flex-basis:50%;
+    }
+    .image-box:nth-child(1):hover{
+        flex-basis:50%;
+    }
+}
+/* Start Course Page */
+#course-page{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/img/about_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 50vh;
+}
+#course-page .information{
+    top:30%;
+}
+/* Start Blog Page */
+#blog-page{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/img/about_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 50vh;
+}
+#blog-page .information{
+    top:30%;
+}
+.blog{
+    width:80%;
+    margin:auto;
+    margin-top:50px;
+    padding:20px 0px;
+    overflow: hidden;
+}
+.blog-left{
+    width:60%;
+    margin-right:5%;
+    float: left;
+    overflow: hidden;
+}
+.blog-right{
+    width:30%;
+    float: right;
+}
+.blog-left img{
+    width:100%;
+    border-radius: 10px;
+    margin-bottom:5%;
+}
+.blog-left p{
+    line-height: 1.6;
+    margin-bottom:15px;
+}
+.blog-right h2 {
+    font-size: 17px;
+    padding: 10px;
+    background: chocolate;
+    margin: auto;
+    text-align: center;
+    margin-left: 4%;
+    border-radius: 10px;
+    margin-bottom:5%;
+}
+.single-cat{
+    overflow: hidden;
+}
+.single-cat p{
+    float: left;
+    width:80%;
+    overflow: hidden;
+    text-transform: capitalize;
+    padding:15px 0px;
+}
+.single-cat span{
+    float: right;
+    width:10%;
+    margin-left:10%;
+    padding:15px 0px;
+}
+.comment-box{
+    padding:10px;
+    border:1px solid chocolate;
+}
+.comment-box h2{
+    margin-bottom:5%;
+}
+.comment-box input, textarea{
+    width:100%;
+    box-sizing: border-box;
+    padding:10px;
+    border-radius: 5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+}
+@media(max-width: 768px) {
+    .blog-left{
+        width:100%;
+    }
+    .blog-right{
+        width:100%;
+        margin-top:5%;
+    }
+}
+
+/* Start contact Page */
+.contact-area{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+    margin-top:100px;
+}
+.contact-left{
+    float: left;
+    width:50%;
+    overflow: hidden;
+}
+.contact-left .contact-info{
+    padding:10px 0px;
+}
+.contact-left .contact-info h2{
+    margin:0px;
+    padding:0px;
+    font-size:22px;
+    color:#000;
+}
+.contact-info p{
+    font-size:18px;
+    color:#777;
+}
+.contact-right{
+    float: right;
+    width:50%;
+    overflow: hidden;
+}
+
+.form-group {
+    width: 100%;
+    padding: 8px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #ae4646;
+    padding: 8px 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.form-group input[type="submit"] {
+    width:140px;
+    font-size:20px;
+    color:#777;
+    cursor: pointer;
+    transition:1s;
+}
+.form-group input[type="submit"]:hover{
+    background:chocolate;
+    color: #000;
+}
+.form-group input[type="reset"] {
+    width:140px;
+    font-size:20px;
+    color:#777;
+    cursor: pointer;
+    transition:1s;
+}
+.form-group input[type="reset"]:hover{
+    background:chocolate;
+    color: #000;
+}
+@media screen and (max-width:768px) {
+    .contact-area{
+        margin-top:50px;
+    }
+    .contact-left{
+        width:100%;
+        float: none;
+    }
+    .contact-right{
+        width:100%;
+        float: none;
+        margin-top:40px;
+    }
+}

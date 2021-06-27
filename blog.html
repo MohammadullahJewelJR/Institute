@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Website Making by Jewel</title>
+    <!--********* Stylesheet ***********-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="header" id="blog-page">
+    <nav>
+        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+        <ul id="nav-menu">
+            <i class="menu-icon" onclick="hideMenu()">&times;</i>
+
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <i class="menu-icon" onclick="showMenu()">&reg;</i>
+    </nav>
+    <div class="information">
+        <h1>Our Certificates & Online Programs For 2021</h1>
+    </div>
+</section>
+<section class="blog">
+    <div class="blog-left">
+        <img src="assets/img/riyad.jpg" alt="Riyad">
+        <h2>Our blog heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sapiente, earum facere impedit harum veniam nesciunt velit, numquam iusto ullam id. Eos omnis natus nobis corporis ipsum alias dolore itaque, voluptates in dicta cupiditate ipsam nostrum ducimus? Hic magni totam maxime.</p> <p>Sapiente iusto ex perspiciatis. Odit rem ducimus fuga molestias, dolores maxime porro, recusandae, omnis placeat totam optio! Vitae debitis beatae, maxime laboriosam similique veniam delectus, velit placeat quos nihil ratione fuga error optio numquam distinctio eum! Praesentium ipsa nesciunt sunt veritatis doloribus nam unde inventore ipsum, consequuntur aperiam! Voluptate totam, quibusdam nobis saepe quas deleniti est fugit accusantium reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloribus placeat, iste facilis ullam dolores, a quos rerum, architecto quibusdam modi necessitatibus quam quasi consequuntur. Autem sit a tenetur, ut fugiat nobis quo repudiandae magni ipsum perspiciatis facilis, distinctio alias!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugit nostrum mollitia distinctio, voluptas iure autem vel inventore quos rem.</p>
+
+        <div class="comment-box">
+            <h2>Leave comment</h2>
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <textarea cols="14" rows="10" placeholder="Write Comment"></textarea>
+            <a href="#" class="btn">Post Comment</a>
+        </div>
+    </div>
+    <div class="blog-right">
+        <h2>Post Categories</h2>
+       <div class="single-cat">
+            <p>business Analytics </p><span>21</span>
+       </div>
+       <div class="single-cat">
+            <p>Date Seience </p><span>28</span>
+       </div>
+       <div class="single-cat">
+            <p>Machine Learning </p><span>15</span>
+       </div>
+       <div class="single-cat">
+        <p>Computer Seience </p><span>34</span>
+       </div>
+       <div class="single-cat">
+            <p>AutoCAD </p><span>42</span>
+       </div>
+    </div>
+</section>
+<!-- Start About Area -->
+<section class="about">
+    <h2>about us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis hic mollitia, inventore ratione repudiandae <br> obcaecati explicabo architecto sint doloribus.</p>
+    <div class="share">
+        <i>&divideontimes;</i>
+        <i>&timesd;</i>
+        <i>&CircleTimes;</i>
+        <i>&starf;</i>
+    </div>
+    <p class="copy">Made with <i> &hearts;</i> by Jewel.</p>
+</section>
+<!-- End About Area -->
+<br><br>
+
+
+<script>
+    var navMenu = document.getElementById('nav-menu');
+    function hideMenu() {
+        navMenu.style.right ='-200px';
+    }
+    function showMenu() {
+        navMenu.style.right ='0';
+    }
+</script>
+</body>
+</html>

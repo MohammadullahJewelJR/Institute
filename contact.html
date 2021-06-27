@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Website Making by Jewel</title>
+    <!--********* Stylesheet ***********-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="header" id="course-page">
+    <nav>
+        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+        <ul id="nav-menu">
+            <i class="menu-icon" onclick="hideMenu()">&times;</i>
+
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <i class="menu-icon" onclick="showMenu()">&reg;</i>
+    </nav>
+    <div class="information">
+        <h1>Contact</h1>
+    </div>
+</section>
+<!-- Start Contact Area -->
+    <div class="contact-page">
+        <div class="contact-area">
+            <div class="contact-left">
+                <div class="contact-info">
+                    <h2>Our Address</h2>
+                    <p>Guzadia, Karimgang, Kishoreganj</p>
+                </div>
+                <div class="contact-info">
+                    <h2>Our Email</h2>
+                    <p>mohammadullah@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <h2>Our Phone</h2>
+                    <p>01234567901</p>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <input type="text" placeholder="Write Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Write Your Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Write Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="10" rows="8" placeholder="Write  Your Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" required>
+                        <input type="reset" value="Reset" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- End Contact Area -->
+<!-- Start About Area -->
+<section class="about">
+    <h2>about us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis hic mollitia, inventore ratione repudiandae <br> obcaecati explicabo architecto sint doloribus.</p>
+    <div class="share">
+        <i>&divideontimes;</i>
+        <i>&timesd;</i>
+        <i>&CircleTimes;</i>
+        <i>&starf;</i>
+    </div>
+    <p class="copy">Made with <i> &hearts;</i> by Jewel.</p>
+</section>
+<!-- End About Area -->
+<script>
+    var navMenu = document.getElementById('nav-menu');
+    function hideMenu() {
+        navMenu.style.right ='-200px';
+    }
+    function showMenu() {
+        navMenu.style.right ='0';
+    }
+</script>
+</body>
+</html>

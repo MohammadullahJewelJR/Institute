@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Website Making by Jewel</title>
+    <!--********* Stylesheet ***********-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="header" id="about-page">
+    <nav>
+        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+        <ul id="nav-menu">
+            <i class="menu-icon" onclick="hideMenu()">&times;</i>
+
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <i class="menu-icon" onclick="showMenu()">&reg;</i>
+    </nav>
+    <div class="information">
+        <h1>About Us</h1>
+    </div>
+</section>
+<!-- Start About Description -->
+<section class="about-desc">
+    <div class="left-area">
+        <h2>We are the world's  largest University</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquam praesentium aspernatur fugit. Ea labore sunt ad eveniet dicta, exercitationem fugiat necessitatibus, nobis distinctio a veniam. Hic magni dolor quo.</p>
+        <a href="#" class="btn">EXPOLER NOW</a>
+    </div>
+    <div class="right-area">
+        <img src="assets/img/Lighthouse.jpg" alt="">
+    </div>
+</section>
+<!-- End About Description -->
+<section class="our-gallery">
+    <h2>Our Gallery Image</h2>
+    <div class="gallery">
+        <div class="image-box active">
+            <img src="assets/img/aa.jpg" alt="">
+            <h2>Amir Khan</h2>
+        </div>
+        <div class="image-box">
+            <img src="assets/img/elon1.jpg" alt="">
+            <h2>Elon</h2>
+        </div>
+        <div class="image-box">
+            <img src="assets/img/emna.jpg" alt="">
+            <h2>Emna</h2>
+        </div>
+        <div class="image-box">
+            <img src="assets/img/sah.jpg" alt="">
+            <h2>Sahrukh khan</h2>
+        </div>
+        <div class="image-box">
+            <img src="assets/img/zuck.jpg" alt="">
+            <h2>Zucker burg</h2>
+        </div>
+        <div class="image-box">
+            <img src="assets/img/gates.jpg" alt="">
+            <h2>Bil Gates</h2>
+        </div>
+    </div>
+</section>
+<!-- Start About Area -->
+<section class="about">
+    <h2>about us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis hic mollitia, inventore ratione repudiandae <br> obcaecati explicabo architecto sint doloribus.</p>
+    <div class="share">
+        <i>&divideontimes;</i>
+        <i>&timesd;</i>
+        <i>&CircleTimes;</i>
+        <i>&starf;</i>
+    </div>
+    <p class="copy">Made with <i> &hearts;</i> by Jewel.</p>
+</section>
+<!-- End About Area -->
+<br><br>
+
+
+<script>
+    var navMenu = document.getElementById('nav-menu');
+    function hideMenu() {
+        navMenu.style.right ='-200px';
+    }
+    function showMenu() {
+        navMenu.style.right ='0';
+    }
+</script>
+</body>
+</html>
