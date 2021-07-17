@@ -399,7 +399,7 @@ h2{
         display: block;
     }
     nav ul{
-        position:absolute;
+        position:fixed;
         width:200px;
         height:100%;
         right:-200px;
