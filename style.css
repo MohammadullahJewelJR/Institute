@@ -9,7 +9,7 @@
     margin: auto;
 }
 .header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/img/bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/img/INS.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
